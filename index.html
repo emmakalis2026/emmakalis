@@ -1,11 +1,252 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">
 <head>
-<title>Emma Kalis</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Emma Kalis – oficjalna strona autorska</title>
+
+<style>
+*{box-sizing:border-box}
+body{
+margin:0;
+font-family:Georgia,serif;
+background:#130b07;
+color:#fff3e6;
+}
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(20,10,6,.9);
+padding:15px 30px;
+z-index:10;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+nav a{
+color:#fff3e6;
+text-decoration:none;
+margin-left:18px;
+font-size:16px;
+}
+.logo{font-weight:bold;font-size:22px;color:#ffb36b}
+header{
+min-height:100vh;
+padding:120px 25px 60px;
+background:linear-gradient(135deg,#120805,#5b2412,#d9792f);
+display:flex;
+align-items:center;
+justify-content:center;
+}
+.hero{
+max-width:1150px;
+display:flex;
+gap:50px;
+align-items:center;
+flex-wrap:wrap;
+}
+.hero img{
+width:340px;
+max-width:100%;
+border-radius:16px;
+box-shadow:0 25px 70px rgba(0,0,0,.6);
+}
+.hero-text{
+flex:1;
+min-width:300px;
+}
+h1{
+font-size:64px;
+margin:0;
+}
+h2{
+font-size:34px;
+color:#ffb36b;
+}
+p{
+font-size:19px;
+line-height:1.7;
+}
+.btn{
+display:inline-block;
+margin:12px 12px 0 0;
+padding:15px 28px;
+background:#ff8c32;
+color:#1b0f09;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+}
+.btn2{
+background:transparent;
+color:#fff3e6;
+border:2px solid #ffb36b;
+}
+section{
+max-width:1100px;
+margin:auto;
+padding:75px 25px;
+}
+.card{
+background:rgba(255,255,255,.08);
+padding:35px;
+border-radius:24px;
+box-shadow:0 20px 50px rgba(0,0,0,.25);
+}
+.quote{
+font-size:28px;
+font-style:italic;
+color:#ffb36b;
+border-left:5px solid #ff8c32;
+padding-left:25px;
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+.author{
+display:flex;
+gap:35px;
+align-items:center;
+flex-wrap:wrap;
+}
+.author img{
+width:240px;
+max-width:100%;
+border-radius:18px;
+box-shadow:0 15px 40px rgba(0,0,0,.45);
+}
+footer{
+text-align:center;
+padding:35px;
+background:#080403;
+color:#cbb6a3;
+}
+@media(max-width:700px){
+h1{font-size:44px}
+nav{display:block;text-align:center}
+nav a{display:inline-block;margin:8px}
+}
+</style>
 </head>
+
 <body>
+
+<nav>
+<div class="logo">Emma Kalis</div>
+<div>
+<a href="#ksiazka">Książka</a>
+<a href="#fragment">Fragment</a>
+<a href="#autorka">O autorce</a>
+<a href="#kontakt">Kontakt</a>
+</div>
+</nav>
+
+<header>
+<div class="hero">
+<img src="okladka.jpg" alt="Okładka książki I znów tu jestem">
+<div class="hero-text">
 <h1>Emma Kalis</h1>
-<p>Oficjalna strona autorska.</p>
-<p>Książka: I znów tu jestem</p>
+<h2>Oficjalna strona autorska</h2>
+<p>
+Autorka debiutanckiej powieści „I znów tu jestem” – historii o drugiej szansie,
+pamięci, miłości, błędach i konsekwencjach życiowych wyborów.
+</p>
+<a class="btn" href="#ksiazka">Poznaj książkę</a>
+<a class="btn btn2" href="#kontakt">Kontakt</a>
+</div>
+</div>
+</header>
+
+<section id="ksiazka">
+<div class="card">
+<h2>I znów tu jestem</h2>
+<p class="quote">
+Co, jeśli druga szansa przychodzi w sposób, którego nikt się nie spodziewa?
+</p>
+<p>
+Bernard traci życie po tragicznym wypadku. Gdy otwiera oczy, odkrywa,
+że narodził się ponownie — jako dziecko w rodzinie, którą dobrze zna.
+Zachowuje jednak wspomnienia poprzedniego życia.
+</p>
+<p>
+„I znów tu jestem” to poruszająca opowieść o człowieku, który dostaje
+możliwość rozpoczęcia życia od nowa. To historia o dojrzewaniu, rodzinie,
+utraconej miłości i próbie naprawienia tego, co wcześniej zostało zniszczone.
+</p>
+<a class="btn" href="#">Kup książkę</a>
+</div>
+</section>
+
+<section id="fragment">
+<div class="card">
+<h2>Fragment książki</h2>
+<p>
+„Jadę, choć droga rozmywa mi się przed oczami. Sam nie wiem dokąd.
+Chcę być po prostu z dala od tej sytuacji, od domu, od Zoyi,
+od tych głupich osądzających spojrzeń.”
+</p>
+<p>
+Już od pierwszych stron czytelnik trafia w sam środek dramatycznego momentu,
+który staje się początkiem zupełnie nowej historii.
+</p>
+</div>
+</section>
+
+<section id="autorka">
+<div class="card author">
+<img src="autorka.jpg" alt="Emma Kalis">
+<div>
+<h2>O autorce</h2>
+<p>
+Emma Kalis – z wykształcenia krajoznawczyni, z zawodu florystka,
+z zamiłowania pisarka.
+</p>
+<p>
+Ukończyła studia na Katolickim Uniwersytecie Lubelskim na kierunku
+krajoznawstwo i turystyka kulturowa.
+</p>
+<p>
+Od jakiegoś czasu pisze „do szuflady”, a dziś postanowiła podzielić się
+swoją twórczością ze światem. „I znów tu jestem” to jej literacki debiut.
+</p>
+</div>
+</div>
+</section>
+
+<section>
+<div class="grid">
+<div class="card">
+<h2>Książki</h2>
+<p><strong>I znów tu jestem</strong> – debiutancka powieść Emmy Kalis.</p>
+<p>Kolejne publikacje pojawią się tutaj.</p>
+</div>
+
+<div class="card">
+<h2>Dla czytelników</h2>
+<p>
+Na stronie znajdziesz informacje o twórczości autorki, zapowiedzi kolejnych książek,
+fragmenty powieści oraz aktualności.
+</p>
+</div>
+</div>
+</section>
+
+<section id="kontakt">
+<div class="card">
+<h2>Kontakt</h2>
+<p>
+W sprawie książki, współpracy, recenzji lub spotkań autorskich:
+</p>
+<p><strong>E-mail:</strong> wpisz-tutaj-email@przyklad.pl</p>
+</div>
+</section>
+
+<footer>
+© 2026 Emma Kalis. Wszystkie prawa zastrzeżone.
+</footer>
+
 </body>
 </html>
