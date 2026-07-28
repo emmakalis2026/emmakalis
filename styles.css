@@ -616,3 +616,94 @@ section { scroll-margin-top: 88px; }
   .cookie-actions .button { flex: 1; }
   .mobile-cta { display: grid; }
 }
+
+
+/* Prosta sekcja odpowiedzi bez rozwijania */
+.simple-facts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+.fact-card {
+  padding: 24px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: 0 10px 28px rgba(24, 22, 20, .07);
+}
+.fact-card h3 {
+  margin: 0 0 10px;
+  font-family: var(--serif);
+  font-size: 23px;
+  line-height: 1.3;
+}
+.fact-card p {
+  margin: 0;
+  color: #4d433d;
+}
+
+/* Karty recenzentów */
+.review-heading {
+  text-align: center;
+}
+.review-heading h2 {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: clamp(34px, 5vw, 54px);
+}
+.review-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+.review-card {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  text-align: left;
+  background: rgba(255, 255, 255, .075);
+  border: 1px solid rgba(255, 255, 255, .15);
+  border-radius: var(--radius);
+}
+.review-card blockquote {
+  margin: 0 0 18px;
+  font-family: var(--serif);
+  font-size: 22px;
+  line-height: 1.5;
+}
+.review-card .quote-author {
+  margin-top: auto;
+}
+.review-card .text-link {
+  margin-top: 8px;
+}
+.review-source {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+/* Krótsze podziękowania */
+.ack-short {
+  padding: 26px;
+}
+.ack-short h2 {
+  margin: 0 0 12px;
+  font-family: var(--serif);
+  font-size: clamp(28px, 4vw, 40px);
+}
+.ack-short p {
+  margin: 0;
+}
+
+/* Naprawa zamykania komunikatu o prywatności */
+.cookie-banner[hidden] {
+  display: none !important;
+}
+
+@media (max-width: 960px) {
+  .simple-facts,
+  .review-cards {
+    grid-template-columns: 1fr;
+  }
+}

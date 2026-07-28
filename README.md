@@ -16,3 +16,12 @@ Nowa, uproszczona strona autorska Emmy Kalis.
 - Google Analytics: `G-8NGG7MXVF5`.
 - Formularz opinii: `https://formspree.io/f/mqernzwy`.
 - Opinie nie publikują się automatycznie; należy je zatwierdzić i ręcznie dodać do `index.html`.
+
+
+## Aktualizacja v2
+
+- uproszczono sekcję pytań i odpowiedzi;
+- skrócono podziękowania;
+- dodano recenzję @ziarnokakaowca;
+- dodano opinię i link do Lubimyczytać;
+- naprawiono zamykanie komunikatu o prywatności.
