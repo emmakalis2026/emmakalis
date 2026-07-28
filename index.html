@@ -1,252 +1,372 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Emma Kalis – oficjalna strona autorska</title>
-
-<style>
-*{box-sizing:border-box}
-body{
-margin:0;
-font-family:Georgia,serif;
-background:#130b07;
-color:#fff3e6;
-}
-nav{
-position:fixed;
-top:0;
-width:100%;
-background:rgba(20,10,6,.9);
-padding:15px 30px;
-z-index:10;
-display:flex;
-justify-content:space-between;
-align-items:center;
-}
-nav a{
-color:#fff3e6;
-text-decoration:none;
-margin-left:18px;
-font-size:16px;
-}
-.logo{font-weight:bold;font-size:22px;color:#ffb36b}
-header{
-min-height:100vh;
-padding:120px 25px 60px;
-background:linear-gradient(135deg,#120805,#5b2412,#d9792f);
-display:flex;
-align-items:center;
-justify-content:center;
-}
-.hero{
-max-width:1150px;
-display:flex;
-gap:50px;
-align-items:center;
-flex-wrap:wrap;
-}
-.hero img{
-width:340px;
-max-width:100%;
-border-radius:16px;
-box-shadow:0 25px 70px rgba(0,0,0,.6);
-}
-.hero-text{
-flex:1;
-min-width:300px;
-}
-h1{
-font-size:64px;
-margin:0;
-}
-h2{
-font-size:34px;
-color:#ffb36b;
-}
-p{
-font-size:19px;
-line-height:1.7;
-}
-.btn{
-display:inline-block;
-margin:12px 12px 0 0;
-padding:15px 28px;
-background:#ff8c32;
-color:#1b0f09;
-text-decoration:none;
-border-radius:30px;
-font-weight:bold;
-}
-.btn2{
-background:transparent;
-color:#fff3e6;
-border:2px solid #ffb36b;
-}
-section{
-max-width:1100px;
-margin:auto;
-padding:75px 25px;
-}
-.card{
-background:rgba(255,255,255,.08);
-padding:35px;
-border-radius:24px;
-box-shadow:0 20px 50px rgba(0,0,0,.25);
-}
-.quote{
-font-size:28px;
-font-style:italic;
-color:#ffb36b;
-border-left:5px solid #ff8c32;
-padding-left:25px;
-}
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:25px;
-}
-.author{
-display:flex;
-gap:35px;
-align-items:center;
-flex-wrap:wrap;
-}
-.author img{
-width:240px;
-max-width:100%;
-border-radius:18px;
-box-shadow:0 15px 40px rgba(0,0,0,.45);
-}
-footer{
-text-align:center;
-padding:35px;
-background:#080403;
-color:#cbb6a3;
-}
-@media(max-width:700px){
-h1{font-size:44px}
-nav{display:block;text-align:center}
-nav a{display:inline-block;margin:8px}
-}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>I znów tu jestem — Emma Kalis</title>
+  <meta name="description" content="„I znów tu jestem” to poruszająca, introspektywna opowieść o duchowej przemianie, dojrzewaniu i poszukiwaniu sensu.">
+  <link rel="canonical" href="https://emmakalis.pl/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pl_PL">
+  <meta property="og:title" content="I znów tu jestem — Emma Kalis">
+  <meta property="og:description" content="Poruszająca, introspektywna opowieść o duchowej przemianie, dojrzewaniu i poszukiwaniu sensu.">
+  <meta property="og:url" content="https://emmakalis.pl/">
+  <meta property="og:image" content="https://emmakalis.pl/assets/baner.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
-
 <body>
+  <a class="skip-link" href="#main">Przejdź do treści</a>
 
-<nav>
-<div class="logo">Emma Kalis</div>
-<div>
-<a href="#ksiazka">Książka</a>
-<a href="#fragment">Fragment</a>
-<a href="#autorka">O autorce</a>
-<a href="#kontakt">Kontakt</a>
-</div>
-</nav>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="#top" aria-label="I znów tu jestem — strona główna">Emma Kalis</a>
 
-<header>
-<div class="hero">
-<img src="okladka.jpg" alt="Okładka książki I znów tu jestem">
-<div class="hero-text">
-<h1>Emma Kalis</h1>
-<h2>Oficjalna strona autorska</h2>
-<p>
-Autorka debiutanckiej powieści „I znów tu jestem” – historii o drugiej szansie,
-pamięci, miłości, błędach i konsekwencjach życiowych wyborów.
-</p>
-<a class="btn" href="#ksiazka">Poznaj książkę</a>
-<a class="btn btn2" href="#kontakt">Kontakt</a>
-</div>
-</div>
-</header>
+      <nav class="main-nav" aria-label="Główna nawigacja">
+        <a href="#zapowiedzi">Zapowiedzi</a>
+        <a href="#o-ksiazce">O książce</a>
+        <a href="#prolog">Prolog</a>
+        <a href="#opinie">Opinie</a>
+      </nav>
 
-<section id="ksiazka">
-<div class="card">
-<h2>I znów tu jestem</h2>
-<p class="quote">
-Co, jeśli druga szansa przychodzi w sposób, którego nikt się nie spodziewa?
-</p>
-<p>
-Bernard traci życie po tragicznym wypadku. Gdy otwiera oczy, odkrywa,
-że narodził się ponownie — jako dziecko w rodzinie, którą dobrze zna.
-Zachowuje jednak wspomnienia poprzedniego życia.
-</p>
-<p>
-„I znów tu jestem” to poruszająca opowieść o człowieku, który dostaje
-możliwość rozpoczęcia życia od nowa. To historia o dojrzewaniu, rodzinie,
-utraconej miłości i próbie naprawienia tego, co wcześniej zostało zniszczone.
-</p>
-<a class="btn" href="#">Kup książkę</a>
-</div>
-</section>
+      <div class="header-actions">
+        <a class="social-link" data-track="instagram" href="https://www.instagram.com/emmakalis777?igsh=MXc1cHlxenFvcWs3aQ==" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+        <a class="social-link" data-track="tiktok" href="https://www.tiktok.com/@emma.kalis777?_r=1&_t=ZN-98O30sS0fjC" target="_blank" rel="noopener" aria-label="TikTok">TT</a>
+        <a class="social-link" data-track="facebook" href="https://www.facebook.com/share/18wTP2KHjg/" target="_blank" rel="noopener" aria-label="Facebook">FB</a>
 
-<section id="fragment">
-<div class="card">
-<h2>Fragment książki</h2>
-<p>
-„Jadę, choć droga rozmywa mi się przed oczami. Sam nie wiem dokąd.
-Chcę być po prostu z dala od tej sytuacji, od domu, od Zoyi,
-od tych głupich osądzających spojrzeń.”
-</p>
-<p>
-Już od pierwszych stron czytelnik trafia w sam środek dramatycznego momentu,
-który staje się początkiem zupełnie nowej historii.
-</p>
-</div>
-</section>
+        <details class="purchase-dropdown">
+          <summary>Zamów książkę</summary>
+          <div class="purchase-list">
+            <a data-store="Nie Powiem" href="https://niepowiem.com.pl/produkt/i-znow-tu-jestem-emma-kalis/" target="_blank" rel="noopener">Nie Powiem — wydawca</a>
+            <a data-store="Empik" href="https://www.empik.com/i-znow-tu-jestem-emma-kalis,p1760014449,ksiazka-p" target="_blank" rel="noopener">Empik</a>
+            <a data-store="Allegro" href="https://allegro.pl/produkt/i-znow-tu-jestem-emma-kalis-7f8e4926-9381-470e-a385-b6e8d28cd047?offerId=18749435499" target="_blank" rel="noopener">Allegro</a>
+            <a data-store="Legimi" href="https://www.legimi.pl/ebook-i-znowu-tu-jestem-emma-kalis,b1623016.html" target="_blank" rel="noopener">Legimi — e-book</a>
+          </div>
+        </details>
+      </div>
 
-<section id="autorka">
-<div class="card author">
-<img src="autorka.jpg" alt="Emma Kalis">
-<div>
-<h2>O autorce</h2>
-<p>
-Emma Kalis – z wykształcenia krajoznawczyni, z zawodu florystka,
-z zamiłowania pisarka.
-</p>
-<p>
-Ukończyła studia na Katolickim Uniwersytecie Lubelskim na kierunku
-krajoznawstwo i turystyka kulturowa.
-</p>
-<p>
-Od jakiegoś czasu pisze „do szuflady”, a dziś postanowiła podzielić się
-swoją twórczością ze światem. „I znów tu jestem” to jej literacki debiut.
-</p>
-</div>
-</div>
-</section>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">Menu</button>
+    </div>
 
-<section>
-<div class="grid">
-<div class="card">
-<h2>Książki</h2>
-<p><strong>I znów tu jestem</strong> – debiutancka powieść Emmy Kalis.</p>
-<p>Kolejne publikacje pojawią się tutaj.</p>
-</div>
+    <div id="mobile-menu" class="mobile-menu" hidden>
+      <a href="#zapowiedzi">Zapowiedzi</a>
+      <a href="#o-ksiazce">O książce</a>
+      <a href="#prolog">Prolog</a>
+      <a href="#opinie">Opinie</a>
+      <a href="#zamow">Zamów książkę</a>
+    </div>
+  </header>
 
-<div class="card">
-<h2>Dla czytelników</h2>
-<p>
-Na stronie znajdziesz informacje o twórczości autorki, zapowiedzi kolejnych książek,
-fragmenty powieści oraz aktualności.
-</p>
-</div>
-</div>
-</section>
+  <div id="top" class="hero" aria-label="I znów tu jestem — Emma Kalis">
+    <img src="assets/baner.jpg" alt="Baner książki „I znów tu jestem” Emmy Kalis" width="1210" height="446" fetchpriority="high">
+  </div>
 
-<section id="kontakt">
-<div class="card">
-<h2>Kontakt</h2>
-<p>
-W sprawie książki, współpracy, recenzji lub spotkań autorskich:
-</p>
-<p><strong>E-mail:</strong> wpisz-tutaj-email@przyklad.pl</p>
-</div>
-</section>
+  <div class="quick-actions" aria-label="Szybkie działania">
+    <a class="button button-light" href="#prolog" data-action="prolog-scroll">Prolog</a>
+    <details class="purchase-dropdown purchase-dropdown-large">
+      <summary>Zamów książkę</summary>
+      <div class="purchase-list">
+        <a data-store="Nie Powiem" href="https://niepowiem.com.pl/produkt/i-znow-tu-jestem-emma-kalis/" target="_blank" rel="noopener">Nie Powiem — wydawca</a>
+        <a data-store="Empik" href="https://www.empik.com/i-znow-tu-jestem-emma-kalis,p1760014449,ksiazka-p" target="_blank" rel="noopener">Empik</a>
+        <a data-store="Allegro" href="https://allegro.pl/produkt/i-znow-tu-jestem-emma-kalis-7f8e4926-9381-470e-a385-b6e8d28cd047?offerId=18749435499" target="_blank" rel="noopener">Allegro</a>
+        <a data-store="Legimi" href="https://www.legimi.pl/ebook-i-znowu-tu-jestem-emma-kalis,b1623016.html" target="_blank" rel="noopener">Legimi — e-book</a>
+      </div>
+    </details>
+    <div class="quick-socials">
+      <a data-track="instagram" href="https://www.instagram.com/emmakalis777?igsh=MXc1cHlxenFvcWs3aQ==" target="_blank" rel="noopener">Instagram</a>
+      <a data-track="tiktok" href="https://www.tiktok.com/@emma.kalis777?_r=1&_t=ZN-98O30sS0fjC" target="_blank" rel="noopener">TikTok</a>
+      <a data-track="facebook" href="https://www.facebook.com/share/18wTP2KHjg/" target="_blank" rel="noopener">Facebook</a>
+    </div>
+  </div>
 
-<footer>
-© 2026 Emma Kalis. Wszystkie prawa zastrzeżone.
-</footer>
+  <main id="main">
+    <section id="zapowiedzi" class="section dark-section">
+      <div class="container">
+        <header class="section-heading">
+          <p class="eyebrow">Materiały wideo</p>
+          <h1>Zapowiedzi</h1>
+        </header>
 
+        <div class="video-grid">
+          <article class="video-card">
+            <h2>Zapowiedź 1</h2>
+            <video controls playsinline preload="metadata" poster="assets/zapowiedz-1-poster.jpg" data-video-name="Zapowiedź 1">
+              <source src="assets/zapowiedz-1.mp4" type="video/mp4">
+              Twoja przeglądarka nie obsługuje odtwarzania filmu.
+            </video>
+          </article>
+
+          <article class="video-card">
+            <h2>Zapowiedź 2</h2>
+            <video controls playsinline preload="metadata" poster="assets/zapowiedz-2-poster.jpg" data-video-name="Zapowiedź 2">
+              <source src="assets/zapowiedz-2.mp4" type="video/mp4">
+              Twoja przeglądarka nie obsługuje odtwarzania filmu.
+            </video>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="o-ksiazce" class="section">
+      <div class="container about-grid">
+        <figure class="author-card">
+          <img src="assets/autorka.jpg" alt="Emma Kalis" width="900" height="1350" loading="lazy">
+          <figcaption>
+            <h2>Emma Kalis</h2>
+            <p>Z zawodu florystka, z zamiłowania pisarka. Inspiracje czerpie z otaczającej ją codzienności, nadając jej własny charakter. „I znów tu jestem” jest jej literackim debiutem.</p>
+          </figcaption>
+        </figure>
+
+        <div class="book-copy">
+          <p class="eyebrow">O książce</p>
+          <h2>Co jeśli druga szansa przychodzi w sposób, którego nikt się nie spodziewa?</h2>
+          <p>„I znów tu jestem” to poruszająca, introspektywna opowieść o duchowej przemianie, dojrzewaniu i poszukiwaniu sensu. To historia człowieka, który zostaje zmuszony, by spojrzeć na siebie z innej perspektywy i zmierzyć się z gniewem, błędami oraz konsekwencjami własnych wyborów.</p>
+          <p>Między codziennością a duchowym doświadczeniem rodzi się pytanie: czy los daje nam dokładnie tyle, ile jesteśmy w stanie unieść – i czy potrafimy z tej lekcji skorzystać?</p>
+
+          <blockquote>
+            „Gdyby zamiast własnego życia, mieć w rękach cudze, nadal zachowywalibyście się tak samo?”
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq-section">
+      <div class="container narrow">
+        <header class="section-heading">
+          <p class="eyebrow">Warto wiedzieć</p>
+          <h2>Pytania o książkę</h2>
+        </header>
+
+        <div class="accordion">
+          <details>
+            <summary>W jakim klimacie utrzymana jest powieść Emmy Kalis?</summary>
+            <p>Książka ta jest kameralną i głęboko introspektywną opowieścią o charakterze psychologicznym. Autorka kładzie duży nacisk na warstwę emocjonalną oraz duchową przemianę głównego bohatera w obliczu życiowych trudności. Czytelnik znajdzie tu refleksję nad błędami z przeszłości oraz procesem dojrzewania do ważnych zmian. To lektura wymagająca skupienia, która skłania do zastanowienia się nad własnymi wyborami i ich konsekwencjami.</p>
+          </details>
+
+          <details>
+            <summary>Dla kogo historia w „I znów tu jestem” będzie najbardziej wartościowa?</summary>
+            <p>Książka „I znów tu jestem” to idealny wybór dla osób poszukujących w literaturze motywu drugiej szansy i odkupienia. Opowieść ta rezonuje z czytelnikami, którzy cenią historie o konfrontacji z własną historią i poszukiwaniu sensu w bolesnych doświadczeniach. Dzięki perspektywie duchowej przemiany pozycja ta aktywnie wspiera proces wewnętrznej autorefleksji. Jest to lektura niosąca nadzieję na zrozumienie trudnych lekcji, jakie stawia przed nami życie.</p>
+          </details>
+
+          <details>
+            <summary>Jaką problematykę podejmuje książka w kontekście rozwoju osobistego?</summary>
+            <p>Głównym motywem utworu jest konfrontacja człowieka z konsekwencjami własnego gniewu oraz nieprzemyślanych decyzji. Narracja prowadzi przez proces mierzenia się z odpowiedzialnością za swoje czyny w kontekście codziennych zmagań. Autorka analizuje, czy człowiek jest w stanie udźwignąć ciężar doświadczeń i wyciągnąć z nich konstruktywne wnioski na przyszłość. Taka tematyka sprawia, że książka staje się lustrem dla emocji, z którymi wielu odbiorców boryka się na co dzień.</p>
+          </details>
+
+          <details>
+            <summary>Czy fabuła skupia się na akcji czy na przeżyciach wewnętrznych?</summary>
+            <p>Narracja koncentruje się przede wszystkim na dynamicznych procesach zachodzących wewnątrz bohatera, a nie na gwałtownych zwrotach akcji. Wydarzenia zewnętrzne służą tu jako impuls do pogłębionej analizy psychologicznej oraz rozważań egzystencjalnych. Czytelnik śledzi ewolucję postaw i zmianę perspektywy patrzenia na otaczający świat, co buduje napięcie o charakterze emocjonalnym. To podejście sprawia, że każda wewnętrzna decyzja bohatera ma dla czytelnika bardzo wysoką wagę.</p>
+          </details>
+
+          <details>
+            <summary>Komu ta książka może nie przypaść do gustu?</summary>
+            <p>Lektura ta może okazać się niewłaściwym wyborem dla osób szukających wyłącznie lekkiej rozrywki lub szybkiego tempa fabularnego. Ze względu na swój analityczny charakter i skupienie na sferze duchowej, wymaga ona od odbiorcy gotowości do wejścia w poważniejszy ton rozważań. Czytelnicy preferujący literaturę czysto przygodową lub sensacyjną mogą uznać, że ciężar gatunkowy tej powieści rozmija się z ich aktualnymi potrzebami. Jest to propozycja skierowana do odbiorców otwartych na spokój oraz dłuższą refleksję nad tekstem.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section review-highlight">
+      <div class="container narrow">
+        <p class="eyebrow">Recenzja</p>
+        <blockquote class="large-quote">
+          „Historia została napisana z taką dynamiką i stylem, że po prostu nie dało się jej odłożyć!”
+        </blockquote>
+        <p class="quote-author">@zaczytana_ania1984</p>
+        <a class="text-link" href="https://www.instagram.com/reel/DbL7l5NIYZn/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" rel="noopener" data-track="review-instagram">Przeczytaj pełną recenzję na Instagramie</a>
+      </div>
+    </section>
+
+    <section class="section acknowledgements">
+      <div class="container narrow">
+        <details class="ack-details">
+          <summary>Podziękowania od autorki</summary>
+          <div class="ack-copy">
+            <p>Myślę, że to odpowiedni moment, aby podziękować wszystkim, którzy przyczynili się do wydania tej książki.</p>
+            <p>Serdeczne podziękowania kieruję do Wydawnictwa Nie Powiem za zaufanie i danie mi szansy na spełnienie tego marzenia. Dziękuję również wszystkim osobom zaangażowanym w pracę nad tekstem, redakcji, korekcie oraz twórcom okładki. Jestem niezwykle wdzięczna za tę owocną współpracę, profesjonalizm i wsparcie na każdym etapie powstawania książki.</p>
+            <p>Szczególne podziękowania pragnę skierować do mojego męża. Bez Ciebie ta historia najprawdopodobniej nigdy nie opuściłaby szuflady. Dziękuję, że byłeś przy mnie od pierwszego zdania aż po ostatnią napisaną stronę, nieustannie wspierając mnie i motywując. Twoja obecność, cierpliwość i wsparcie były dla mnie bezcenne.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section id="prolog" class="section prolog-section">
+      <div class="container reading-width">
+        <header class="section-heading">
+          <p class="eyebrow">Przeczytaj fragment</p>
+          <h2>Prolog</h2>
+        </header>
+
+        <div class="prolog-text">
+          <p>Jadę, choć droga rozmywa mi się przed oczami. Sam nie wiem dokąd. Chcę być po prostu z dala od tej sytuacji, od domu, od Zoi, od tych głupich osądzających spojrzeń. Muszę odreagować. Do cholery, przecież jestem dorosłym mężczyzną, mogę robić co chcę!</p>
+
+          <p>Zatrzymuję się w sklepie i kupuję butelkę wódki. Pociągam z flaszki kilka łyków i wrzucam ją do plecaka, znowu ruszając w drogę.</p>
+
+          <details id="full-prolog" class="full-prolog">
+            <summary>Czytaj cały prolog</summary>
+            <div class="prolog-more">
+              <p>Wchodzę w zakręt, mając na liczniku mojej niezawodnej Hondy jakieś 130 km/h, a później… Właśnie. A później tracę panowanie nad moim motocyklem i zjeżdżam do rowu. Wiem, że lecę kawałek dalej i próbuję odwrócić się do tyłu, żeby zobaczyć, jak bardzo ucierpiał mój sprzęt, ale nie jest mi to dane. Odpływam…</p>
+
+              <p>Kiedy podnoszę ponownie głowę widzę tylko ciemność. Wstaję i stwierdzam, że jak na taki upadek wyjątkowo dobrze się czuję. Rozglądam się wokół, ale nie jestem w stanie dostrzec nic dalej niż palce moich stóp. W tym momencie słyszę swoje imię i odwracam się w kierunku, z którego dochodzi.</p>
+
+              <p>Moim oczom ukazuje się światło. Super, może uda się poszukać pomocy. Możliwe, że motocykl będzie do odratowania.</p>
+
+              <p class="dialogue">— Bernardzie!</p>
+              <p class="dialogue">— Już idę, chwileczkę! — krzyczę i ruszam w stronę światła.</p>
+
+              <p>Myślałem, że jest bliżej, a jednak droga mi się dłuży. Może to skutki wypitego alkoholu, ale przecież nie boli mnie głowa. Próbuję iść szybciej, ale moje nogi są ciężkie jak z ołowiu. Nie jest możliwe, abym przyspieszył. Mija około piętnastu minut, aż w końcu przechodzę przez światło.</p>
+
+              <p>Ogarnia mnie dziwne uczucie, którego nie jestem w stanie opisać słowami. W całym moim życiu nie czułem czegoś takiego. Z czystym sumieniem mogę powiedzieć, że nawet po najlepszych dragach tego świata nigdy nie poczułem się tak jak w tym momencie. Światło mnie przenika, czuję się, jakby wnikało teraz we mnie i przechodziło przez każdą komórkę mojego ciała.</p>
+
+              <p>Zaczynam dostrzegać wyjście, jeszcze chwila i dotknę klamki, dzielą mnie od tego tylko ułamki sekund. Chwytam drzwi, uchylam je i czuję jak spadam w nicość. Lecę szybko w dół, wiruję, a później dzieje się coś, co ciężko pojąć. Słyszę płacz małego dziecka, noworodka. Najdziwniejsze w tym jest to, że to ja płaczę. A swoimi oczami obserwuję wijącą się obok mnie pępowinę i uradowaną minę położnej.</p>
+
+              <p class="dialogue">— Witamy na świecie, maluchu!</p>
+            </div>
+          </details>
+
+          <details class="visual-prolog">
+            <summary>Zobacz prolog w wersji graficznej</summary>
+            <div class="prolog-images">
+              <img src="assets/prolog-1.jpg" alt="Pierwsza część prologu w wersji graficznej" loading="lazy">
+              <img src="assets/prolog-2.jpg" alt="Druga część prologu w wersji graficznej" loading="lazy">
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="zamow" class="section order-section">
+      <div class="container order-grid">
+        <img class="order-cover" src="assets/okladka.jpg" alt="Okładka książki „I znów tu jestem”" loading="lazy">
+        <div class="order-copy">
+          <p class="eyebrow">Dostępna w sprzedaży</p>
+          <h2>Zamów książkę</h2>
+          <div class="store-grid">
+            <a data-store="Nie Powiem" class="store-button" href="https://niepowiem.com.pl/produkt/i-znow-tu-jestem-emma-kalis/" target="_blank" rel="noopener">
+              <strong>Nie Powiem</strong><span>wydawca</span>
+            </a>
+            <a data-store="Empik" class="store-button" href="https://www.empik.com/i-znow-tu-jestem-emma-kalis,p1760014449,ksiazka-p" target="_blank" rel="noopener">
+              <strong>Empik</strong><span>książka papierowa</span>
+            </a>
+            <a data-store="Allegro" class="store-button" href="https://allegro.pl/produkt/i-znow-tu-jestem-emma-kalis-7f8e4926-9381-470e-a385-b6e8d28cd047?offerId=18749435499" target="_blank" rel="noopener">
+              <strong>Allegro</strong><span>oferta książki</span>
+            </a>
+            <a data-store="Legimi" class="store-button" href="https://www.legimi.pl/ebook-i-znowu-tu-jestem-emma-kalis,b1623016.html" target="_blank" rel="noopener">
+              <strong>Legimi</strong><span>e-book</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="opinie" class="section opinions-section">
+      <div class="container narrow">
+        <header class="section-heading">
+          <p class="eyebrow">Czytelnicy</p>
+          <h2>Opinie czytelników</h2>
+        </header>
+
+        <div class="opinion-controls" role="group" aria-label="Opinie czytelników">
+          <button class="tab-button active" type="button" data-tab="reviews-panel">Przeczytaj opinie</button>
+          <button class="tab-button" type="button" data-tab="review-form-panel">Napisz swoją</button>
+        </div>
+
+        <div id="reviews-panel" class="tab-panel">
+          <article class="reader-review">
+            <p>„Historia została napisana z taką dynamiką i stylem, że po prostu nie dało się jej odłożyć!”</p>
+            <footer>@zaczytana_ania1984</footer>
+          </article>
+
+          <article class="reader-review">
+            <p>„Książkę przeczytałam jednym tchem. Od pierwszych stron bardzo mnie wciągnęła i trudno było ją odłożyć. To historia, która potrafi zaciekawić, wzbudzić emocje i sprawić, że chce się czytać dalej.”</p>
+            <footer>Ewelina K., czytelniczka</footer>
+          </article>
+
+          <p class="moderation-note">Kolejne opinie pojawią się po zatwierdzeniu przez administratora strony.</p>
+        </div>
+
+        <div id="review-form-panel" class="tab-panel" hidden>
+          <form id="review-form" class="review-form" novalidate>
+            <div class="form-row">
+              <label for="review-name">Imię lub pseudonim</label>
+              <input type="text" id="review-name" name="name" maxlength="60" autocomplete="name" required>
+            </div>
+
+            <div class="form-row">
+              <label for="review-email">E-mail <span>(nie będzie publikowany)</span></label>
+              <input type="email" id="review-email" name="email" autocomplete="email" required>
+            </div>
+
+            <div class="form-row">
+              <label for="review-rating">Ocena książki</label>
+              <select id="review-rating" name="rating" required>
+                <option value="">Wybierz ocenę</option>
+                <option value="5">5 – znakomita</option>
+                <option value="4">4 – bardzo dobra</option>
+                <option value="3">3 – dobra</option>
+                <option value="2">2 – przeciętna</option>
+                <option value="1">1 – nie dla mnie</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <label for="review-message">Twoja opinia</label>
+              <textarea id="review-message" name="message" rows="7" minlength="20" maxlength="2000" required></textarea>
+            </div>
+
+            <label class="consent">
+              <input type="checkbox" name="publication_consent" value="tak" required>
+              <span>Wyrażam zgodę na publikację opinii oraz podanego imienia lub pseudonimu. Zapoznałem(-am) się z <a href="polityka-prywatnosci.html">polityką prywatności</a>.</span>
+            </label>
+
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="honeypot" aria-hidden="true">
+            <input type="hidden" name="_subject" value="Nowa opinia czytelnika – emmakalis.pl">
+
+            <button class="button button-primary" type="submit">Wyślij opinię</button>
+            <p id="review-success" class="form-message success" hidden>Dziękujemy. Opinia została wysłana i pojawi się po zatwierdzeniu.</p>
+            <p id="review-error" class="form-message error" hidden>Nie udało się wysłać opinii. Sprawdź pola i spróbuj ponownie.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Emma Kalis</strong>
+        <p>Autorka powieści „I znów tu jestem”.</p>
+      </div>
+      <div>
+        <a href="mailto:emmakalis777@gmail.com">emmakalis777@gmail.com</a>
+        <a href="polityka-prywatnosci.html">Polityka prywatności</a>
+        <button class="footer-link" type="button" id="cookie-settings">Ustawienia cookies</button>
+      </div>
+      <div class="footer-socials">
+        <a data-track="instagram" href="https://www.instagram.com/emmakalis777?igsh=MXc1cHlxenFvcWs3aQ==" target="_blank" rel="noopener">Instagram</a>
+        <a data-track="tiktok" href="https://www.tiktok.com/@emma.kalis777?_r=1&_t=ZN-98O30sS0fjC" target="_blank" rel="noopener">TikTok</a>
+        <a data-track="facebook" href="https://www.facebook.com/share/18wTP2KHjg/" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <p class="copyright">© 2026 Emma Kalis. Wszystkie prawa zastrzeżone.</p>
+  </footer>
+
+  <div id="cookie-banner" class="cookie-banner" role="dialog" aria-live="polite" aria-label="Ustawienia cookies" hidden>
+    <div>
+      <strong>Ustawienia prywatności</strong>
+      <p>Strona korzysta z niezbędnych mechanizmów technicznych. Za zgodą użyjemy Google Analytics, aby mierzyć odwiedziny i kliknięcia.</p>
+    </div>
+    <div class="cookie-actions">
+      <button type="button" class="button button-light" data-cookie="necessary">Tylko niezbędne</button>
+      <button type="button" class="button button-primary" data-cookie="analytics">Akceptuję analitykę</button>
+    </div>
+  </div>
+
+  <div class="mobile-cta" aria-label="Szybkie działania na telefonie">
+    <a href="#prolog" data-action="prolog-scroll">Prolog</a>
+    <a href="#zamow">Zamów książkę</a>
+  </div>
 </body>
 </html>
